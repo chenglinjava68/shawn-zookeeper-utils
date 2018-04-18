@@ -50,6 +50,8 @@ public class ChildrenNodeWithSyncTest implements Watcher {
 
             zooKeeper.setData("/api_node/node_4", "".getBytes(), -1); // 监听无效
 
+            zooKeeper.setData("/api_node", "".getBytes(), -1); //监听无效
+
             Thread.sleep(Integer.MAX_VALUE);
 
         } catch (IOException e) {
